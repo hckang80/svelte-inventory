@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+menu[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	min-height: 100vh;
+	min-height: 100dvh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	font:
+		1.5rem/1.5 Pretendard,
+		-apple-system,
+		system-ui,
+		Roboto,
+		sans-serif;
+	color: #767676;
+}
+
+ul[class],
+ol[class],
+menu[class] {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img,
+svg {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+a {
+	display: inline-block;
+	color: inherit;
+	text-decoration: none;
+}
+
+address,
+em,
+i {
+	font-style: normal;
+}
+
+button {
+	all: unset;
+	box-sizing: border-box;
+
+	&:focus-visible {
+		outline: 1px auto -webkit-focus-ring-color;
+	}
+
+	&:not(:disabled) {
+		cursor: pointer;
+	}
+}
+
+table[class] {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+summary {
+	cursor: pointer;
+
+	&::-webkit-details-marker,
+	&::marker {
+		display: none;
+		content: '';
+	}
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
