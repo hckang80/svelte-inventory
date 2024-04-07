@@ -8,6 +8,18 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	declare const __QUALITY__: number;
+
+	declare module '*as-picture' {
+		const imgMeta: ImgMeta;
+		export default imgMeta;
+	}
+
+	declare module '*&imagetools' {
+		const imgMeta: ImgMeta;
+		export default imgMeta;
+	}
 }
 
 export {};
