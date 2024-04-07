@@ -4,7 +4,7 @@ import logo from '$lib/images/svelte-logo.svg';
 import { decoding, loading } from '$src/lib';
 
 const meta = {
-	title: 'Example/Img',
+	title: 'Element/Img',
 	component: Img,
 	tags: ['autodocs'],
 	argTypes: {
